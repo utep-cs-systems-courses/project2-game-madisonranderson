@@ -21,7 +21,7 @@ char toggle_red() {
   return 1;
 }
 
-/*
+
 char toggle_green() {
   static char state = 0;
   switch(state) {
@@ -36,7 +36,7 @@ char toggle_green() {
   }
   return 1;
 }
-*/
+
 
 void state_advance(){
 

@@ -7,7 +7,7 @@ void __interrupt_vec(WDT_VECTOR) WDT(){
   static char advance = 0;
   static char buzzer_count = 0;
   
-  if (++dim_count == 4){
+  if (++dim_count == 2){
     dim_both();
     if(++advance == 250){
       dim_advance();

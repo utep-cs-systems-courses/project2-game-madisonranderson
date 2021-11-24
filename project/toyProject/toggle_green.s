@@ -3,9 +3,7 @@
 
 	
 	.text
-	.global toggle_green
+	.global change
 
-toggle_green:
-	mov #1, &green_led_state
-	mov #1, r12
-	pop r0
+change:
+	call #dim_advance
