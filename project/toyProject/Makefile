@@ -19,6 +19,8 @@ load: button.elf
 
 buttonMain.c: buzzer.h
 
+led.o: led.c led.h
+
 toggle_green.o: toggle_green.s stateMachine.h 
 
 p1_interrupt_handler.o: switches.h
@@ -29,7 +31,7 @@ buzzer.c: buzzer.h
 
 stateMachine.o: led.h stateMachine.h
 
-led.o: led.c led.h
+switches.o: led.h switches.h
 
 clean:
 	rm -f *.o *.elf
